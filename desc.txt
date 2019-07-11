@@ -1,0 +1,25 @@
+Story:
+As a world traveler I want to be able to find information about a given country.
+
+Use case:
+  - I need a list of all continents on the planet
+  - When I select a continent I shall see all countries on that continent
+  - When I select a country from the list I want to see some details about it
+
+Objective:
+Create a simple Apollo Server based graphql API implementing the following schema: https://gist.github.com/valeksiev/2649158722425cfdedf4e654685bd199
+
+Resources:
+Data source: https://github.com/annexare/Countries
+Apollo Server: https://www.apollographql.com/docs/apollo-server/
+Similar API: https://countries.trevorblades.com/
+
+Requirements:
+When a query is executed it must be logged into an external service for analytic purposes.
+In the example logging some information about the query (timestamp, arguments, number of results) to the console is good enough.
+Still this needs to be implemented in a good way because more services will be hooked to that in the future.
+
+Notes:
+- follow best practices and good coding standards; the AirBNB eslint config is a good start
+- organize and structure your code as well as possible
+- tests are not required but a huge plus
